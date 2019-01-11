@@ -10,18 +10,18 @@ android:
   - tools
   - build-tools-28.0.3
   - android-28
-  - sys-img-armeabi-v7a-android-22
+  - sys-img-armeabi-v7a-android-28
 
   #Extras
   - extra-android-m2repository
   - extra-google-m2repository  # Removed duplicated component
 
 before_install:
-  - echo yes | android update sdk --all --filter build-tools-26.0.2 --no-ui --force
+  - echo yes | android update sdk --all --filter build-tools-28.0.3 --no-ui --force
 
 before_script:    
   - android list targets
-  - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a
+  - echo no | android create avd --force -n test -t android-28 --abi armeabi-v7a
   - emulator -avd test -no-audio -no-window &
   - android-wait-for-emulator
   - adb shell settings put global window_animation_scale 0 &
