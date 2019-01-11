@@ -24,8 +24,6 @@ public class MainActivityTest {
 
     @Test
     public void testSum(){
-        //fail("Not implemented yet!");
-
         onView(withId(R.id.etNum1)).perform(click()).perform(typeText("4"));
         onView(withId(R.id.etNum2)).perform(click()).perform(typeText("4"));
         onView(withId(R.id.btnAdd)).perform(click());
