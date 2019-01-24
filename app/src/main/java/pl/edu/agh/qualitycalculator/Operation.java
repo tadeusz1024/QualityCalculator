@@ -1,9 +1,7 @@
 package pl.edu.agh.qualitycalculator;
 
 public enum Operation {
-    SUM {
-        @Override
-        public String toString() {
+    SUM {@Override public String toString() {
             return "plus";
         }
     },
@@ -24,5 +22,9 @@ public enum Operation {
         public String toString() {
             return "divided by";
         }
+    },
+    AVERAGE {
+        @Override
+        public String toString() {return "Average";}
     }
 }
