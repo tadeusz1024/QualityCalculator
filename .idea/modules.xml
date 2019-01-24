@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/QualityCalculator.iml" filepath="$PROJECT_DIR$/.idea/QualityCalculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/QualityCalculator.iml" filepath="$PROJECT_DIR$/QualityCalculator.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/QualityCalculatorTR.iml" filepath="$PROJECT_DIR$/.idea/QualityCalculatorTR.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

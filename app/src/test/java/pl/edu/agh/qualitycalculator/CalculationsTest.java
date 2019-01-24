@@ -19,15 +19,15 @@ public class CalculationsTest {
         assertEquals(5, calculationsUnderTest.calculate(Operation.SUM, 2, 3), 0.01);
     }
     @Test
-    public void testSub() throws Exception {
+    public void testSubstract() throws Exception {
         assertEquals(-1, calculationsUnderTest.calculate(Operation.SUBTRACT, 2, 3), 0.01);
     }
     @Test
-    public void testMlt() throws Exception {
+    public void testMultiply() throws Exception {
         assertEquals(6, calculationsUnderTest.calculate(Operation.MULTIPLY, 2, 3), 0.01);
     }
     @Test
-    public void testDiv() throws Exception {
+    public void testDivide() throws Exception {
         assertEquals(1, calculationsUnderTest.calculate(Operation.DIVIDE, 2, 2), 0.01);
     }
 

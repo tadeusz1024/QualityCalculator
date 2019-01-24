@@ -31,7 +31,7 @@ public class MainActivityTest {
     }
 
    @Test
-   public void testSub(){
+   public void testSubtract(){
        onView(withId(R.id.etNum1)).perform(click()).perform(typeText("5"));
        onView(withId(R.id.etNum2)).perform(click()).perform(typeText("4"));
        onView(withId(R.id.btnSub)).perform(click());
@@ -39,14 +39,14 @@ public class MainActivityTest {
    }
 
     @Test
-    public void testMult(){
+    public void testMultiply(){
         onView(withId(R.id.etNum1)).perform(click()).perform(typeText("5"));
         onView(withId(R.id.etNum2)).perform(click()).perform(typeText("4"));
         onView(withId(R.id.btnMult)).perform(click());
         onView(withId(R.id.tvResult)).check(matches(withText("5.0 multiplied b 4.0 gives value 20.0")));
     }
     @Test
-    public void testDiv(){
+    public void testDivide(){
         onView(withId(R.id.etNum1)).perform(click()).perform(typeText("20"));
         onView(withId(R.id.etNum2)).perform(click()).perform(typeText("4"));
         onView(withId(R.id.btnDiv)).perform(click());
