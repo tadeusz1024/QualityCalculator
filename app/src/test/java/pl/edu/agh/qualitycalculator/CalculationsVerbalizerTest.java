@@ -11,9 +11,24 @@ public class CalculationsVerbalizerTest {
         calculationsVerbaizerUnderTest = new CalculationsVerbalizer();
     }
     @Test
-    public void testVerbalizeTwoArgs() throws Exception {
+    public void testVerbalizeTwoArgsSum() throws Exception {
         expectedMessage="1.0 plus 2.0 gives value 3.0";
         assertEquals(expectedMessage,calculationsVerbaizerUnderTest.verbalize(Operation.SUM,1,2, 3),expectedMessage);
+    }
+    @Test
+    public void testVerbalizeTwoArgsSubtrac() throws Exception {
+        expectedMessage="3.0 minus 2.0 gives value 1.0";
+        assertEquals(expectedMessage,calculationsVerbaizerUnderTest.verbalize(Operation.SUBTRACT,3,2, 1),expectedMessage);
+    }
+    @Test
+    public void testVerbalizeTwoArgsMultiply() throws Exception {
+        expectedMessage="6.0 multiplied by 2.0 gives value 12.0";
+        assertEquals(expectedMessage,calculationsVerbaizerUnderTest.verbalize(Operation.MULTIPLY,6,2, 12),expectedMessage);
+    }
+    @Test
+    public void testVerbalizeTwoArgsDivide() throws Exception {
+        expectedMessage="12.0 divided by 3.0 gives value 4.0";
+        assertEquals(expectedMessage,calculationsVerbaizerUnderTest.verbalize(Operation.DIVIDE,12,3, 4),expectedMessage);
     }
     @Test
     public void testVerbalizeThreeArgs() throws Exception {
