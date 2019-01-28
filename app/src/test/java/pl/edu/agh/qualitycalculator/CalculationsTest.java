@@ -21,10 +21,6 @@ public class CalculationsTest {
     public void testDivide() throws Exception {
         assertEquals(5, calculationsUnderTest.calculate(Operation.DIVIDE, 10, 2, 0), 0.01);
     }
-//    @Test //(expected = IllegalArgumentException.class)
-//    public void testDivideByZero() throws Exception {
-//        assertEquals("Infinity", calculationsUnderTest.calculate(Operation.DIVIDE, 1, 0, 0));
-//    }
     @Test
     public void testMultiply() throws Exception {
         assertEquals(10, calculationsUnderTest.calculate(Operation.MULTIPLY, 5, 2, 0), 0.01);

@@ -2,7 +2,13 @@ package pl.edu.agh.qualitycalculator;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.MissingFormatArgumentException;
+
 import static junit.framework.Assert.assertEquals;
+import static junit.framework.Assert.assertNotNull;
+import static junit.framework.Assert.assertNull;
+
 public class CalculationsVerbalizerTest {
     CalculationsVerbalizer calculationsVerbaizerUnderTest;
     String expectedMessage;

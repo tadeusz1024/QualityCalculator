@@ -67,9 +67,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
         float num1 = Float.parseFloat(etNum1.getText().toString());
         float num2 = Float.parseFloat(etNum2.getText().toString());
-        // Gdy User kliknie przycisk odpowiadajacy za liczenie sredniej sprawdzamy czy trzecie pole
-        // jest uzupelnione. Jesli nie jest to prosimy o uzupelnienie wszystkich pol.
-        // Pozwala to na wykonywanie podstawowych dzialan bez uzpelniania trzeciego pola z ktorego one nie korzystaja.
+        // Wybranie przez użytkownika operacji liczenia średniej uruchamia test wypełnienia
+        // trzeciego pola. Gdy pole nie ma uzupełnionych danych wyświetlany jest monit o ich
+        // uzupełnienie. Dla pozostałych operacji wypełnienie trzeciego pola nie ma znaczenia.
         float num3 = 0;
         if (selectedOperation == Operation.AVERAGE) {
             if (TextUtils.isEmpty(etNum3.getText().toString()))
