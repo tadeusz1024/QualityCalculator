@@ -1,6 +1,7 @@
 package pl.edu.agh.qualitycalculator;
 public class Calculations {
     public float calculate(Operation op, float operand1, float operand2, float operand3) throws Exception {
+
         if (op.equals(Operation.SUM)) {
             return sum(operand1, operand2);
         } else if (op.equals(Operation.SUBTRACT)) {
